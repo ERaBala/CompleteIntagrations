@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE07B8541CD78320003B2F2F /* FBNextControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07B8531CD78320003B2F2F /* FBNextControllerViewController.swift */; };
 		CE3F33221CD72DB4001B4942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F33211CD72DB4001B4942 /* AppDelegate.swift */; };
 		CE3F33241CD72DB4001B4942 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F33231CD72DB4001B4942 /* ViewController.swift */; };
 		CE3F33271CD72DB4001B4942 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3F33251CD72DB4001B4942 /* Main.storyboard */; };
@@ -14,6 +15,15 @@
 		CE3F332C1CD72DB4001B4942 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3F332A1CD72DB4001B4942 /* LaunchScreen.storyboard */; };
 		CE3F33371CD72DB5001B4942 /* CompleteIntagrationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F33361CD72DB5001B4942 /* CompleteIntagrationsTests.swift */; };
 		CE3F33421CD72DB5001B4942 /* CompleteIntagrationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F33411CD72DB5001B4942 /* CompleteIntagrationsUITests.swift */; };
+		CE3F33501CD72F24001B4942 /* FBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F334F1CD72F24001B4942 /* FBViewController.swift */; };
+		CE3F33521CD72F33001B4942 /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F33511CD72F33001B4942 /* TwitterViewController.swift */; };
+		CE3F33541CD72F4D001B4942 /* GPlusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F33531CD72F4D001B4942 /* GPlusViewController.swift */; };
+		CE3F33561CD72F5F001B4942 /* YTubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F33551CD72F5F001B4942 /* YTubeViewController.swift */; };
+		CE3F33591CD72F8A001B4942 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3F33581CD72F8A001B4942 /* Social.framework */; };
+		CE3F335B1CD72F99001B4942 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3F335A1CD72F99001B4942 /* Twitter.framework */; };
+		CE3F335F1CD7325B001B4942 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3F335C1CD7325B001B4942 /* FBSDKCoreKit.framework */; };
+		CE3F33601CD7325B001B4942 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3F335D1CD7325B001B4942 /* FBSDKLoginKit.framework */; };
+		CE3F33611CD7325B001B4942 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3F335E1CD7325B001B4942 /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE07B8531CD78320003B2F2F /* FBNextControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBNextControllerViewController.swift; sourceTree = "<group>"; };
 		CE3F331E1CD72DB4001B4942 /* CompleteIntagrations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompleteIntagrations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3F33211CD72DB4001B4942 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE3F33231CD72DB4001B4942 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,16 @@
 		CE3F333D1CD72DB5001B4942 /* CompleteIntagrationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompleteIntagrationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3F33411CD72DB5001B4942 /* CompleteIntagrationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteIntagrationsUITests.swift; sourceTree = "<group>"; };
 		CE3F33431CD72DB5001B4942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3F334F1CD72F24001B4942 /* FBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBViewController.swift; sourceTree = "<group>"; };
+		CE3F33511CD72F33001B4942 /* TwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
+		CE3F33531CD72F4D001B4942 /* GPlusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPlusViewController.swift; sourceTree = "<group>"; };
+		CE3F33551CD72F5F001B4942 /* YTubeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTubeViewController.swift; sourceTree = "<group>"; };
+		CE3F33581CD72F8A001B4942 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		CE3F335A1CD72F99001B4942 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		CE3F335C1CD7325B001B4942 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		CE3F335D1CD7325B001B4942 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		CE3F335E1CD7325B001B4942 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		CE3F33621CD740F8001B4942 /* CompleteIntagrations-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CompleteIntagrations-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +75,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3F335B1CD72F99001B4942 /* Twitter.framework in Frameworks */,
+				CE3F335F1CD7325B001B4942 /* FBSDKCoreKit.framework in Frameworks */,
+				CE3F33611CD7325B001B4942 /* FBSDKShareKit.framework in Frameworks */,
+				CE3F33601CD7325B001B4942 /* FBSDKLoginKit.framework in Frameworks */,
+				CE3F33591CD72F8A001B4942 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,9 +100,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE07B8551CD78326003B2F2F /* FaceBoook */ = {
+			isa = PBXGroup;
+			children = (
+				CE3F334F1CD72F24001B4942 /* FBViewController.swift */,
+				CE07B8531CD78320003B2F2F /* FBNextControllerViewController.swift */,
+			);
+			name = FaceBoook;
+			sourceTree = "<group>";
+		};
 		CE3F33151CD72DB4001B4942 = {
 			isa = PBXGroup;
 			children = (
+				CE3F33571CD72F6F001B4942 /* FrameWorks */,
 				CE3F33201CD72DB4001B4942 /* CompleteIntagrations */,
 				CE3F33351CD72DB5001B4942 /* CompleteIntagrationsTests */,
 				CE3F33401CD72DB5001B4942 /* CompleteIntagrationsUITests */,
@@ -97,12 +133,17 @@
 		CE3F33201CD72DB4001B4942 /* CompleteIntagrations */ = {
 			isa = PBXGroup;
 			children = (
+				CE07B8551CD78326003B2F2F /* FaceBoook */,
 				CE3F33211CD72DB4001B4942 /* AppDelegate.swift */,
 				CE3F33231CD72DB4001B4942 /* ViewController.swift */,
+				CE3F33511CD72F33001B4942 /* TwitterViewController.swift */,
+				CE3F33531CD72F4D001B4942 /* GPlusViewController.swift */,
+				CE3F33551CD72F5F001B4942 /* YTubeViewController.swift */,
 				CE3F33251CD72DB4001B4942 /* Main.storyboard */,
 				CE3F33281CD72DB4001B4942 /* Assets.xcassets */,
 				CE3F332A1CD72DB4001B4942 /* LaunchScreen.storyboard */,
 				CE3F332D1CD72DB4001B4942 /* Info.plist */,
+				CE3F33621CD740F8001B4942 /* CompleteIntagrations-Bridging-Header.h */,
 			);
 			path = CompleteIntagrations;
 			sourceTree = "<group>";
@@ -123,6 +164,18 @@
 				CE3F33431CD72DB5001B4942 /* Info.plist */,
 			);
 			path = CompleteIntagrationsUITests;
+			sourceTree = "<group>";
+		};
+		CE3F33571CD72F6F001B4942 /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+				CE3F335C1CD7325B001B4942 /* FBSDKCoreKit.framework */,
+				CE3F335D1CD7325B001B4942 /* FBSDKLoginKit.framework */,
+				CE3F335E1CD7325B001B4942 /* FBSDKShareKit.framework */,
+				CE3F335A1CD72F99001B4942 /* Twitter.framework */,
+				CE3F33581CD72F8A001B4942 /* Social.framework */,
+			);
+			name = FrameWorks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +309,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3F33561CD72F5F001B4942 /* YTubeViewController.swift in Sources */,
+				CE3F33521CD72F33001B4942 /* TwitterViewController.swift in Sources */,
 				CE3F33241CD72DB4001B4942 /* ViewController.swift in Sources */,
 				CE3F33221CD72DB4001B4942 /* AppDelegate.swift in Sources */,
+				CE07B8541CD78320003B2F2F /* FBNextControllerViewController.swift in Sources */,
+				CE3F33501CD72F24001B4942 /* FBViewController.swift in Sources */,
+				CE3F33541CD72F4D001B4942 /* GPlusViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,10 +457,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CompleteIntagrations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ERaBala.CompleteIntagrations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CompleteIntagrations/CompleteIntagrations-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -410,10 +475,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CompleteIntagrations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ERaBala.CompleteIntagrations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CompleteIntagrations/CompleteIntagrations-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -482,6 +553,7 @@
 				CE3F33481CD72DB5001B4942 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE3F33491CD72DB5001B4942 /* Build configuration list for PBXNativeTarget "CompleteIntagrationsTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +562,7 @@
 				CE3F334B1CD72DB5001B4942 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE3F334C1CD72DB5001B4942 /* Build configuration list for PBXNativeTarget "CompleteIntagrationsUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +571,7 @@
 				CE3F334E1CD72DB5001B4942 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
