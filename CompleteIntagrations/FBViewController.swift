@@ -16,46 +16,38 @@ class FBViewController: UIViewController,FBSDKLoginButtonDelegate
     @IBOutlet var btnFacebook: FBSDKLoginButton!
     @IBOutlet var ivUserProfileImage: UIImageView!
     @IBOutlet var lblName: UILabel!
-//    @IBOutlet var ivUserProfileImage : FBSDKProfilePictureView!
     
     var loginView : FBSDKLoginButton = FBSDKLoginButton()
-    
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        
-//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.loginView.delegate = self
+//        SwiftNSObject .NotificationKey (title: "NSObject Test") .dis()
         
-        if (FBSDKAccessToken.currentAccessToken() != nil)
-        {
-            performSegueWithIdentifier("unwindToViewOtherController", sender: self)
-        }
-        else
-        {
-            configureFacebook()
-        }
+        navigationController?.navigationBar.translucent = false
+        navigationItem.title = "Facebook Login"
+
+        self.loginView.delegate = self
+        self.btnFacebook.delegate = self
+        
+        btnFacebook.center = self.view.center;
         
     }
     
+   
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    func configureFacebook()
-    {
-        btnFacebook.readPermissions = ["public_profile", "email", "user_friends","gender","birthday","age_range"];
-        btnFacebook.delegate = self
-    }
     
-/*    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!)
+    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!)
     {
-        FBSDKGraphRequest.init(graphPath: "me", parameters: ["fields":"first_name, last_name, picture.type(large)"]).startWithCompletionHandler { (connection, result, error) -> Void in
+        
+/*       Any Problem in Facebook SDK Make use of this code. and command the FetchProfile() Methode.
+         
+         FBSDKGraphRequest.init(graphPath: "me", parameters: ["fields":"first_name, last_name, picture.type(large)"]).startWithCompletionHandler { (connection, result, error) -> Void in
             let strFirstName: String = (result.objectForKey("first_name") as? String)!
             let strLastName: String = (result.objectForKey("last_name") as? String)!
             let strPictureURL: String = (result.objectForKey("picture")?.objectForKey("data")?.objectForKey("url") as? String)!
@@ -63,41 +55,62 @@ class FBViewController: UIViewController,FBSDKLoginButtonDelegate
             self.ivUserProfileImage.image = UIImage(data: NSData(contentsOfURL: NSURL(string: strPictureURL)!)!)
             print("result \(result)")
             }
+*/
+        fetchProfile()
     }
-    */
+    
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!)
     {
         let loginManager: FBSDKLoginManager = FBSDKLoginManager()
         
         loginManager.logOut()
-        ivUserProfileImage.image = nil
+        ivUserProfileImage.image = UIImage(named: "Profile_Pic.jpg")
         lblName.text = "Logout"
         print("User Logged Out")
 
     }
     
 
-   
-    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
-        print("User Logged In")
-        
-        if ((error) != nil)
-        {
-            print("Process error")
-        }
-        else if result.isCancelled {
-            // Handle cancellations
-             print("Handle cancellations")
-        }
-        else {
-            // If you ask for multiple permissions at once, you
-            // should check if specific permissions missing
-            if result.grantedPermissions.contains("email")
-            {
-                // Do work
-                 print("Do work")
+    
+    func fetchProfile() {
+        let parameters = ["fields": "email, first_name, last_name, picture.type(large)"]
+        FBSDKGraphRequest(graphPath: "me", parameters: parameters).startWithCompletionHandler({ (connection, user, requestError) -> Void in
+            
+            if requestError != nil {
+                print(requestError)
+
+                SwiftNSObject .Aleart(title:"aleart",message: "Please Check Connection, Problem in Login Try again",btnTitle: "ok") .displayAleart()
+                
+                return
             }
-        }
+            
+            let email = user["email"] as? String
+            let firstName = user["first_name"] as? String
+            let lastName = user["last_name"] as? String
+            
+            self.lblName.text = "\(firstName!) \(lastName!)"
+            print(email)
+            var pictureUrl = ""
+            
+            if let picture = user["picture"] as? NSDictionary, data = picture["data"] as? NSDictionary, url = data["url"] as? String {
+                pictureUrl = url
+            }
+            
+            let url = NSURL(string: pictureUrl)
+            NSURLSession.sharedSession().dataTaskWithURL(url!, completionHandler: { (data, response, error) -> Void in
+                if error != nil {
+                    print(error)
+                    return
+                }
+                
+                let image = UIImage(data: data!)
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    self.ivUserProfileImage.image = image
+                })
+                
+            }).resume()
+            
+        })
     }
     
 

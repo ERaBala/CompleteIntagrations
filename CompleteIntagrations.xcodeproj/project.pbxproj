@@ -24,6 +24,10 @@
 		CE3F335F1CD7325B001B4942 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3F335C1CD7325B001B4942 /* FBSDKCoreKit.framework */; };
 		CE3F33601CD7325B001B4942 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3F335D1CD7325B001B4942 /* FBSDKLoginKit.framework */; };
 		CE3F33611CD7325B001B4942 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3F335E1CD7325B001B4942 /* FBSDKShareKit.framework */; };
+		CE4D714C1CD879FE00E50401 /* Profile_Pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE4D714B1CD879FE00E50401 /* Profile_Pic.jpg */; };
+		CE4D714E1CD8801D00E50401 /* SwiftNSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D714D1CD8801D00E50401 /* SwiftNSObject.swift */; };
+		CE4D71531CD89D1C00E50401 /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D71521CD89D1C00E50401 /* InstagramViewController.swift */; };
+		CE4D71551CD89D3E00E50401 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D71541CD89D3E00E50401 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,10 @@
 		CE3F335D1CD7325B001B4942 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		CE3F335E1CD7325B001B4942 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		CE3F33621CD740F8001B4942 /* CompleteIntagrations-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CompleteIntagrations-Bridging-Header.h"; sourceTree = "<group>"; };
+		CE4D714B1CD879FE00E50401 /* Profile_Pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Profile_Pic.jpg; sourceTree = "<group>"; };
+		CE4D714D1CD8801D00E50401 /* SwiftNSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftNSObject.swift; path = SwiftNSObject/SwiftNSObject.swift; sourceTree = "<group>"; };
+		CE4D71521CD89D1C00E50401 /* InstagramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
+		CE4D71541CD89D3E00E50401 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,9 +117,19 @@
 			name = FaceBoook;
 			sourceTree = "<group>";
 		};
+		CE07B8561CD78521003B2F2F /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				CE3F33531CD72F4D001B4942 /* GPlusViewController.swift */,
+				CE3F33551CD72F5F001B4942 /* YTubeViewController.swift */,
+			);
+			name = Google;
+			sourceTree = "<group>";
+		};
 		CE3F33151CD72DB4001B4942 = {
 			isa = PBXGroup;
 			children = (
+				CE4D714A1CD8796100E50401 /* Resouce */,
 				CE3F33571CD72F6F001B4942 /* FrameWorks */,
 				CE3F33201CD72DB4001B4942 /* CompleteIntagrations */,
 				CE3F33351CD72DB5001B4942 /* CompleteIntagrationsTests */,
@@ -133,13 +151,15 @@
 		CE3F33201CD72DB4001B4942 /* CompleteIntagrations */ = {
 			isa = PBXGroup;
 			children = (
-				CE07B8551CD78326003B2F2F /* FaceBoook */,
+				CE4D714D1CD8801D00E50401 /* SwiftNSObject.swift */,
 				CE3F33211CD72DB4001B4942 /* AppDelegate.swift */,
 				CE3F33231CD72DB4001B4942 /* ViewController.swift */,
-				CE3F33511CD72F33001B4942 /* TwitterViewController.swift */,
-				CE3F33531CD72F4D001B4942 /* GPlusViewController.swift */,
-				CE3F33551CD72F5F001B4942 /* YTubeViewController.swift */,
 				CE3F33251CD72DB4001B4942 /* Main.storyboard */,
+				CE4D71491CD85FE300E50401 /* Twitter */,
+				CE07B8561CD78521003B2F2F /* Google */,
+				CE07B8551CD78326003B2F2F /* FaceBoook */,
+				CE4D714F1CD89C9E00E50401 /* Instagram */,
+				CE4D71541CD89D3E00E50401 /* MapViewController.swift */,
 				CE3F33281CD72DB4001B4942 /* Assets.xcassets */,
 				CE3F332A1CD72DB4001B4942 /* LaunchScreen.storyboard */,
 				CE3F332D1CD72DB4001B4942 /* Info.plist */,
@@ -176,6 +196,30 @@
 				CE3F33581CD72F8A001B4942 /* Social.framework */,
 			);
 			name = FrameWorks;
+			sourceTree = "<group>";
+		};
+		CE4D71491CD85FE300E50401 /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				CE3F33511CD72F33001B4942 /* TwitterViewController.swift */,
+			);
+			name = Twitter;
+			sourceTree = "<group>";
+		};
+		CE4D714A1CD8796100E50401 /* Resouce */ = {
+			isa = PBXGroup;
+			children = (
+				CE4D714B1CD879FE00E50401 /* Profile_Pic.jpg */,
+			);
+			name = Resouce;
+			sourceTree = "<group>";
+		};
+		CE4D714F1CD89C9E00E50401 /* Instagram */ = {
+			isa = PBXGroup;
+			children = (
+				CE4D71521CD89D1C00E50401 /* InstagramViewController.swift */,
+			);
+			name = Instagram;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +329,7 @@
 				CE3F332C1CD72DB4001B4942 /* LaunchScreen.storyboard in Resources */,
 				CE3F33291CD72DB4001B4942 /* Assets.xcassets in Resources */,
 				CE3F33271CD72DB4001B4942 /* Main.storyboard in Resources */,
+				CE4D714C1CD879FE00E50401 /* Profile_Pic.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,8 +357,11 @@
 				CE3F33561CD72F5F001B4942 /* YTubeViewController.swift in Sources */,
 				CE3F33521CD72F33001B4942 /* TwitterViewController.swift in Sources */,
 				CE3F33241CD72DB4001B4942 /* ViewController.swift in Sources */,
+				CE4D71551CD89D3E00E50401 /* MapViewController.swift in Sources */,
+				CE4D714E1CD8801D00E50401 /* SwiftNSObject.swift in Sources */,
 				CE3F33221CD72DB4001B4942 /* AppDelegate.swift in Sources */,
 				CE07B8541CD78320003B2F2F /* FBNextControllerViewController.swift in Sources */,
+				CE4D71531CD89D1C00E50401 /* InstagramViewController.swift in Sources */,
 				CE3F33501CD72F24001B4942 /* FBViewController.swift in Sources */,
 				CE3F33541CD72F4D001B4942 /* GPlusViewController.swift in Sources */,
 			);
