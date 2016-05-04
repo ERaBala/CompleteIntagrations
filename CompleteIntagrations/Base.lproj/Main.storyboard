@@ -154,9 +154,26 @@
                     <view key="view" contentMode="scaleToFill" id="6f1-y2-Dxp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fwj-fl-wNB" customClass="GPPSignInButton">
+                                <rect key="frame" x="148" y="319" width="79" height="30"/>
+                                <state key="normal" title="Google+"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yq7-uj-gPJ">
+                                <rect key="frame" x="144" y="164" width="87" height="34"/>
+                                <string key="text">Sign In with
+Google</string>
+                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="btnGPlus" destination="Fwj-fl-wNB" id="qXJ-84-Xvh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="of3-Ap-WGT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -223,7 +240,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSe-9V-rio" customClass="FBSDKLoginButton">
                                 <rect key="frame" x="106" y="437" width="162" height="30"/>
-                                <state key="normal" title="Login Button"/>
+                                <state key="normal" backgroundImage="facebook-login-button.png"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -258,5 +275,36 @@
             </objects>
             <point key="canvasLocation" x="1131.5" y="-316.5"/>
         </scene>
+        <!--Twt Next View Controller-->
+        <scene sceneID="Tyj-i6-Pqe">
+            <objects>
+                <viewController storyboardIdentifier="TWTNextView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="X4D-Vs-2rX" customClass="twtNextViewController" customModule="CompleteIntagrations" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nIF-a1-SB3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nwt-V8-7B0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lq5-E6-sik">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leg-HO-JeK">
+                                <rect key="frame" x="164" y="584" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="showActionButton:" destination="X4D-Vs-2rX" eventType="touchUpInside" id="ChH-Af-8id"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1UM-LO-ekI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1629.5" y="-316.5"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="facebook-login-button.png" width="300" height="65"/>
+    </resources>
 </document>

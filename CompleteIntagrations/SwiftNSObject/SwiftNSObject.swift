@@ -14,6 +14,7 @@ class SwiftNSObject: NSObject {
         let title: String
         func dis() {
             print("****** \(title) *******")
+            //        SwiftNSObject .NotificationKey (title: "NSObject Test") .dis()
         }
     }
 
@@ -30,6 +31,20 @@ class SwiftNSObject: NSObject {
             alert.addButtonWithTitle(btnTitle)
             alert.show()
             
+            //      SwiftNSObject .Aleart(title:"aleart",message: "Please Check Connection, Problem in Login Try again",btnTitle: "ok") .displayAleart()
+            
         } }
     
+    
+    
+    struct AlertController {
+        let title: String
+        func dis() {
+            let alert = UIAlertController(title: title,
+                                          message: "User ERROR has logged in",
+                                          preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+//            self.presentViewController(alert, animated: true, completion: nil)     // put in Were u want
+        }
+    }
 }

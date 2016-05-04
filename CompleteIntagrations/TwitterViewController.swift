@@ -7,13 +7,43 @@
 //
 
 import UIKit
+import Fabric
+import TwitterKit
+
 
 class TwitterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.navigationBar.translucent = false
+        navigationItem.title = "Twitter Login"
+        
+        let logInButton = TWTRLogInButton { (session, error) in
+            if let unwrappedSession = session {
+/*                let alert = UIAlertController(title: "Logged In",
+                    message: "User \(unwrappedSession.userName) has logged in",
+                    preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(alert, animated: true, completion: nil)  */
+                print(unwrappedSession.userID)
+                print(unwrappedSession.userName)
+                
+                let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("TWTNextView") as! twtNextViewController
+                secondViewController.myStringValue = "Welcome \(unwrappedSession.userName)"
+                self.navigationController?.pushViewController(secondViewController, animated: true)
+                
+            } else {
+                NSLog("Login error: %@", error!.localizedDescription);
+            }
+            // TODO: Base this Tweet ID on some data from elsewhere in your app
 
-        // Do any additional setup after loading the view.
+        }
+        
+        // TODO: Change where the log in button is positioned in your view
+        logInButton.center = self.view.center
+        self.view.addSubview(logInButton)
+
     }
 
     override func didReceiveMemoryWarning() {

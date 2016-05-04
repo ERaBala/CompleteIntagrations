@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ERaBala.CompleteIntagrations</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.475506435724-2nkc4e2b3eckjdka46ohb5sg36u9tcth</string>
+	<key>CLIENT_ID</key>
+	<string>475506435724-2nkc4e2b3eckjdka46ohb5sg36u9tcth.apps.googleusercontent.com</string>
+</dict>
+</plist>

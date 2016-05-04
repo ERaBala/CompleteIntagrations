@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		CE07B8541CD78320003B2F2F /* FBNextControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07B8531CD78320003B2F2F /* FBNextControllerViewController.swift */; };
+		CE0C5AB11CD9B586008CA551 /* facebook-login-button.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C5AB01CD9B586008CA551 /* facebook-login-button.png */; };
+		CE0C5AB71CD9C001008CA551 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0C5AB31CD9C001008CA551 /* Fabric.framework */; };
+		CE0C5AB81CD9C001008CA551 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0C5AB41CD9C001008CA551 /* TwitterKit.framework */; };
+		CE0C5AB91CD9C001008CA551 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CE0C5AB51CD9C001008CA551 /* TwitterKitResources.bundle */; };
+		CE0C5ABA1CD9C001008CA551 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0C5AB61CD9C001008CA551 /* TwitterCore.framework */; };
+		CE0C5ABC1CD9C0E9008CA551 /* twtNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C5ABB1CD9C0E9008CA551 /* twtNextViewController.swift */; };
 		CE3F33221CD72DB4001B4942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F33211CD72DB4001B4942 /* AppDelegate.swift */; };
 		CE3F33241CD72DB4001B4942 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F33231CD72DB4001B4942 /* ViewController.swift */; };
 		CE3F33271CD72DB4001B4942 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3F33251CD72DB4001B4942 /* Main.storyboard */; };
@@ -28,6 +34,13 @@
 		CE4D714E1CD8801D00E50401 /* SwiftNSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D714D1CD8801D00E50401 /* SwiftNSObject.swift */; };
 		CE4D71531CD89D1C00E50401 /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D71521CD89D1C00E50401 /* InstagramViewController.swift */; };
 		CE4D71551CD89D3E00E50401 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D71541CD89D3E00E50401 /* MapViewController.swift */; };
+		CE4D715F1CD8CCCD00E50401 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4D715C1CD8CCCD00E50401 /* GoogleOpenSource.framework */; };
+		CE4D71601CD8CCCD00E50401 /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CE4D715D1CD8CCCD00E50401 /* GooglePlus.bundle */; };
+		CE4D71611CD8CCCD00E50401 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4D715E1CD8CCCD00E50401 /* GooglePlus.framework */; };
+		CE4D71631CD8CCF400E50401 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4D71621CD8CCF400E50401 /* SystemConfiguration.framework */; };
+		CE4D71651CD8CCFF00E50401 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4D71641CD8CCFF00E50401 /* StoreKit.framework */; };
+		CE4D71671CD8CD0900E50401 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4D71661CD8CD0900E50401 /* AddressBook.framework */; };
+		CE4D71691CD8CD5100E50401 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE4D71681CD8CD5100E50401 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +62,12 @@
 
 /* Begin PBXFileReference section */
 		CE07B8531CD78320003B2F2F /* FBNextControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBNextControllerViewController.swift; sourceTree = "<group>"; };
+		CE0C5AB01CD9B586008CA551 /* facebook-login-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-login-button.png"; sourceTree = "<group>"; };
+		CE0C5AB31CD9C001008CA551 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		CE0C5AB41CD9C001008CA551 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		CE0C5AB51CD9C001008CA551 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		CE0C5AB61CD9C001008CA551 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		CE0C5ABB1CD9C0E9008CA551 /* twtNextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = twtNextViewController.swift; sourceTree = "<group>"; };
 		CE3F331E1CD72DB4001B4942 /* CompleteIntagrations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompleteIntagrations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3F33211CD72DB4001B4942 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE3F33231CD72DB4001B4942 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +95,13 @@
 		CE4D714D1CD8801D00E50401 /* SwiftNSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftNSObject.swift; path = SwiftNSObject/SwiftNSObject.swift; sourceTree = "<group>"; };
 		CE4D71521CD89D1C00E50401 /* InstagramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
 		CE4D71541CD89D3E00E50401 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		CE4D715C1CD8CCCD00E50401 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
+		CE4D715D1CD8CCCD00E50401 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlus.bundle; sourceTree = "<group>"; };
+		CE4D715E1CD8CCCD00E50401 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
+		CE4D71621CD8CCF400E50401 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CE4D71641CD8CCFF00E50401 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		CE4D71661CD8CD0900E50401 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		CE4D71681CD8CD5100E50401 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +109,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4D71671CD8CD0900E50401 /* AddressBook.framework in Frameworks */,
+				CE4D71651CD8CCFF00E50401 /* StoreKit.framework in Frameworks */,
+				CE4D71631CD8CCF400E50401 /* SystemConfiguration.framework in Frameworks */,
 				CE3F335B1CD72F99001B4942 /* Twitter.framework in Frameworks */,
 				CE3F335F1CD7325B001B4942 /* FBSDKCoreKit.framework in Frameworks */,
+				CE4D71611CD8CCCD00E50401 /* GooglePlus.framework in Frameworks */,
 				CE3F33611CD7325B001B4942 /* FBSDKShareKit.framework in Frameworks */,
 				CE3F33601CD7325B001B4942 /* FBSDKLoginKit.framework in Frameworks */,
+				CE4D715F1CD8CCCD00E50401 /* GoogleOpenSource.framework in Frameworks */,
 				CE3F33591CD72F8A001B4942 /* Social.framework in Frameworks */,
+				CE0C5AB71CD9C001008CA551 /* Fabric.framework in Frameworks */,
+				CE0C5AB81CD9C001008CA551 /* TwitterKit.framework in Frameworks */,
+				CE0C5ABA1CD9C001008CA551 /* TwitterCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +197,7 @@
 				CE3F33281CD72DB4001B4942 /* Assets.xcassets */,
 				CE3F332A1CD72DB4001B4942 /* LaunchScreen.storyboard */,
 				CE3F332D1CD72DB4001B4942 /* Info.plist */,
+				CE4D71681CD8CD5100E50401 /* GoogleService-Info.plist */,
 				CE3F33621CD740F8001B4942 /* CompleteIntagrations-Bridging-Header.h */,
 			);
 			path = CompleteIntagrations;
@@ -189,6 +224,16 @@
 		CE3F33571CD72F6F001B4942 /* FrameWorks */ = {
 			isa = PBXGroup;
 			children = (
+				CE0C5AB31CD9C001008CA551 /* Fabric.framework */,
+				CE0C5AB41CD9C001008CA551 /* TwitterKit.framework */,
+				CE0C5AB51CD9C001008CA551 /* TwitterKitResources.bundle */,
+				CE0C5AB61CD9C001008CA551 /* TwitterCore.framework */,
+				CE4D71661CD8CD0900E50401 /* AddressBook.framework */,
+				CE4D71641CD8CCFF00E50401 /* StoreKit.framework */,
+				CE4D71621CD8CCF400E50401 /* SystemConfiguration.framework */,
+				CE4D715C1CD8CCCD00E50401 /* GoogleOpenSource.framework */,
+				CE4D715D1CD8CCCD00E50401 /* GooglePlus.bundle */,
+				CE4D715E1CD8CCCD00E50401 /* GooglePlus.framework */,
 				CE3F335C1CD7325B001B4942 /* FBSDKCoreKit.framework */,
 				CE3F335D1CD7325B001B4942 /* FBSDKLoginKit.framework */,
 				CE3F335E1CD7325B001B4942 /* FBSDKShareKit.framework */,
@@ -202,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				CE3F33511CD72F33001B4942 /* TwitterViewController.swift */,
+				CE0C5ABB1CD9C0E9008CA551 /* twtNextViewController.swift */,
 			);
 			name = Twitter;
 			sourceTree = "<group>";
@@ -209,6 +255,7 @@
 		CE4D714A1CD8796100E50401 /* Resouce */ = {
 			isa = PBXGroup;
 			children = (
+				CE0C5AB01CD9B586008CA551 /* facebook-login-button.png */,
 				CE4D714B1CD879FE00E50401 /* Profile_Pic.jpg */,
 			);
 			name = Resouce;
@@ -232,6 +279,7 @@
 				CE3F331A1CD72DB4001B4942 /* Sources */,
 				CE3F331B1CD72DB4001B4942 /* Frameworks */,
 				CE3F331C1CD72DB4001B4942 /* Resources */,
+				CE0C5AB21CD9BFCD008CA551 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -326,10 +374,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0C5AB91CD9C001008CA551 /* TwitterKitResources.bundle in Resources */,
 				CE3F332C1CD72DB4001B4942 /* LaunchScreen.storyboard in Resources */,
+				CE4D71601CD8CCCD00E50401 /* GooglePlus.bundle in Resources */,
 				CE3F33291CD72DB4001B4942 /* Assets.xcassets in Resources */,
 				CE3F33271CD72DB4001B4942 /* Main.storyboard in Resources */,
 				CE4D714C1CD879FE00E50401 /* Profile_Pic.jpg in Resources */,
+				CE4D71691CD8CD5100E50401 /* GoogleService-Info.plist in Resources */,
+				CE0C5AB11CD9B586008CA551 /* facebook-login-button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +401,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CE0C5AB21CD9BFCD008CA551 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 2e6ae4cae003b2bfffc43ed414ac41857cace231 5fdbd2ea1fb62f2300c4b5d3bfc0195c601f607df259d6347c8920a653f2c652";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE3F331A1CD72DB4001B4942 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -362,6 +430,7 @@
 				CE3F33221CD72DB4001B4942 /* AppDelegate.swift in Sources */,
 				CE07B8541CD78320003B2F2F /* FBNextControllerViewController.swift in Sources */,
 				CE4D71531CD89D1C00E50401 /* InstagramViewController.swift in Sources */,
+				CE0C5ABC1CD9C0E9008CA551 /* twtNextViewController.swift in Sources */,
 				CE3F33501CD72F24001B4942 /* FBViewController.swift in Sources */,
 				CE3F33541CD72F4D001B4942 /* GPlusViewController.swift in Sources */,
 			);
@@ -512,6 +581,7 @@
 				);
 				INFOPLIST_FILE = CompleteIntagrations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = ERaBala.CompleteIntagrations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CompleteIntagrations/CompleteIntagrations-Bridging-Header.h";
@@ -530,6 +600,7 @@
 				);
 				INFOPLIST_FILE = CompleteIntagrations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = ERaBala.CompleteIntagrations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CompleteIntagrations/CompleteIntagrations-Bridging-Header.h";
