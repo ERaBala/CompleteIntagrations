@@ -14,6 +14,8 @@
 		CE0C5AB91CD9C001008CA551 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CE0C5AB51CD9C001008CA551 /* TwitterKitResources.bundle */; };
 		CE0C5ABA1CD9C001008CA551 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0C5AB61CD9C001008CA551 /* TwitterCore.framework */; };
 		CE0C5ABC1CD9C0E9008CA551 /* twtNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C5ABB1CD9C0E9008CA551 /* twtNextViewController.swift */; };
+		CE0C5ABF1CDA0CE0008CA551 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C5ABE1CDA0CE0008CA551 /* YTPlayerView.m */; };
+		CE0C5AC21CDA1A32008CA551 /* YTVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C5AC11CDA1A32008CA551 /* YTVideoViewController.swift */; };
 		CE3F33221CD72DB4001B4942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F33211CD72DB4001B4942 /* AppDelegate.swift */; };
 		CE3F33241CD72DB4001B4942 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F33231CD72DB4001B4942 /* ViewController.swift */; };
 		CE3F33271CD72DB4001B4942 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3F33251CD72DB4001B4942 /* Main.storyboard */; };
@@ -68,6 +70,9 @@
 		CE0C5AB51CD9C001008CA551 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		CE0C5AB61CD9C001008CA551 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		CE0C5ABB1CD9C0E9008CA551 /* twtNextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = twtNextViewController.swift; sourceTree = "<group>"; };
+		CE0C5ABD1CDA0CE0008CA551 /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
+		CE0C5ABE1CDA0CE0008CA551 /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
+		CE0C5AC11CDA1A32008CA551 /* YTVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTVideoViewController.swift; sourceTree = "<group>"; };
 		CE3F331E1CD72DB4001B4942 /* CompleteIntagrations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompleteIntagrations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3F33211CD72DB4001B4942 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE3F33231CD72DB4001B4942 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -154,10 +159,19 @@
 		CE07B8561CD78521003B2F2F /* Google */ = {
 			isa = PBXGroup;
 			children = (
+				CE0C5AC01CDA1A06008CA551 /* Youtube */,
 				CE3F33531CD72F4D001B4942 /* GPlusViewController.swift */,
-				CE3F33551CD72F5F001B4942 /* YTubeViewController.swift */,
 			);
 			name = Google;
+			sourceTree = "<group>";
+		};
+		CE0C5AC01CDA1A06008CA551 /* Youtube */ = {
+			isa = PBXGroup;
+			children = (
+				CE3F33551CD72F5F001B4942 /* YTubeViewController.swift */,
+				CE0C5AC11CDA1A32008CA551 /* YTVideoViewController.swift */,
+			);
+			name = Youtube;
 			sourceTree = "<group>";
 		};
 		CE3F33151CD72DB4001B4942 = {
@@ -199,6 +213,8 @@
 				CE3F332D1CD72DB4001B4942 /* Info.plist */,
 				CE4D71681CD8CD5100E50401 /* GoogleService-Info.plist */,
 				CE3F33621CD740F8001B4942 /* CompleteIntagrations-Bridging-Header.h */,
+				CE0C5ABD1CDA0CE0008CA551 /* YTPlayerView.h */,
+				CE0C5ABE1CDA0CE0008CA551 /* YTPlayerView.m */,
 			);
 			path = CompleteIntagrations;
 			sourceTree = "<group>";
@@ -422,8 +438,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0C5AC21CDA1A32008CA551 /* YTVideoViewController.swift in Sources */,
 				CE3F33561CD72F5F001B4942 /* YTubeViewController.swift in Sources */,
 				CE3F33521CD72F33001B4942 /* TwitterViewController.swift in Sources */,
+				CE0C5ABF1CDA0CE0008CA551 /* YTPlayerView.m in Sources */,
 				CE3F33241CD72DB4001B4942 /* ViewController.swift in Sources */,
 				CE4D71551CD89D3E00E50401 /* MapViewController.swift in Sources */,
 				CE4D714E1CD8801D00E50401 /* SwiftNSObject.swift in Sources */,

@@ -27,6 +27,10 @@ class FBViewController: UIViewController,FBSDKLoginButtonDelegate
         navigationController?.navigationBar.translucent = false
         navigationItem.title = "Facebook Login"
 
+        if let image = UIImage(named: "facebook-login-button.png") {
+            btnFacebook.setImage(image, forState: .Normal)
+        }
+        
         self.loginView.delegate = self
         self.btnFacebook.delegate = self
         
