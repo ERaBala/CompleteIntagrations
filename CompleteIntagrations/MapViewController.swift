@@ -12,9 +12,13 @@ import CoreLocation
 
 class MapViewController: UIViewController,CLLocationManagerDelegate {
     
+    var lat:String?
+    var lng:String?
+    var address:String?
 
-
+    @IBOutlet weak var AddressLabel: UILabel!
     @IBOutlet weak var mapView: MKMapView!
+    
     var locationManager = CLLocationManager()
     var location : CLLocation!
     
@@ -25,8 +29,8 @@ class MapViewController: UIViewController,CLLocationManagerDelegate {
         navigationItem.title = "Map View"
         
         let location = CLLocationCoordinate2D(
-            latitude: 13.0522327,
-            longitude: 80.2736188
+            latitude: (Double(lat!))!,
+            longitude: (Double(lng!))!
         )
         // 2
         let span = MKCoordinateSpanMake(0.05, 0.05)

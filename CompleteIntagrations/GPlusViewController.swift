@@ -12,10 +12,12 @@ import MediaPlayer
 import AssetsLibrary
 import CoreLocation
 import CoreMotion
+import Google
 
-class GPlusViewController: UIViewController, GPPSignInDelegate {
+class GPlusViewController: UIViewController, GIDSignInUIDelegate  {
 
-    @IBOutlet weak var btnGPlus: GPPSignInButton!
+   
+    @IBOutlet weak var SigninButton: GPPSignInButton!
     
     let clientId = "475506435724-2nkc4e2b3eckjdka46ohb5sg36u9tcth.apps.googleusercontent.com"
     var signIn:GPPSignIn?
@@ -23,33 +25,8 @@ class GPlusViewController: UIViewController, GPPSignInDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view, typically from a nib.
-        signIn = GPPSignIn.sharedInstance()
+        GIDSignIn.sharedInstance().uiDelegate = self
         
-        btnGPlus.style = kGPPSignInButtonStyleWide
-        btnGPlus.colorScheme = kGPPSignInButtonColorSchemeDark
-        
-        
-        signIn?.shouldFetchGooglePlusUser = true
-        signIn?.shouldFetchGoogleUserID = true
-        signIn?.shouldFetchGoogleUserEmail = true
-        
-        // You previously set kClientId in the "Initialize the Google+ client" step
-        signIn?.clientID = clientId
-        
-        
-        // Uncomment one of these two statements for the scope you chose in the previous step
-        signIn?.scopes = [ kGTLAuthScopePlusLogin ];  // "https://www.googleapis.com/auth/plus.login" scope
-        //signIn.scopes = @[ @"profile" ];            // "profile" scope
-        
-        // Optional: declare signIn.actions, see "app activities"
-        signIn?.delegate = self;
-        // Do any additional setup after loading the view, typically from a nib.
-        signIn?.trySilentAuthentication()
-        //signIn.authenticate()
-
-          
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,17 +45,27 @@ class GPlusViewController: UIViewController, GPPSignInDelegate {
     }
     
     
-    func googlePlusContactsCallback(ticket: GTLServiceTicket!, returnObject: AnyObject?, error: NSError!) {
-        /*
-         if(error != nil){
-         print("\(error)")
-         return
-         }
-         let res  = object as GTLSwiftsampleapiPostRes
-         print("\(res.message) \(res.identifier) \(res.registeredAt) \(res.email)")*/
+    
+    func signInWillDispatch(signIn: GIDSignIn!, error: NSError!) {
+        myActivityIndicator.stopAnimating()
     }
     
+    // Present a view that prompts the user to sign in with Google
+    func signIn(signIn: GIDSignIn!,
+                presentViewController viewController: UIViewController!) {
+        self.presentViewController(viewController, animated: true, completion: nil)
+    }
     
+    // Dismiss the "Sign in with Google" view
+    func signIn(signIn: GIDSignIn!,
+                dismissViewController viewController: UIViewController!) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func didTapSignOut(sender: AnyObject) {
+        GIDSignIn.sharedInstance().signOut()
+    }
+
     func didDisconnectWithError(error: NSError!) {
         print("connect fail")
     }

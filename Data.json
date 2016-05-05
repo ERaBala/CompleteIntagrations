@@ -1,0 +1,20 @@
+{
+    "users": [
+              {
+              "Latitude":51.503038,
+              "Longitude":-0.128371,
+              "Addresses":["Prime Minister & First Lord of the Treasury, 10 Downing Street, , , , London, Greater London"]
+              },
+              {
+              "Latitude": 51.507509,
+              "Longitude": -0.126747,
+              "Addresses": [
+                            "Matra Bae Dynamic, 11 Strand, , , , London, Greater London"
+                            ]
+              }
+              ],
+    "dataTitle": "JSON Tutorial!",
+    "URL": "https://getaddress.io/",
+    "API":"https://api.getaddress.io/v2/uk/sw1a2aa?api-key=wG5GaiVtwkSI1CUjEeUTlw4144"
+    "swiftVersion": 2.1
+}

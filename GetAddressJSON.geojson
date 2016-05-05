@@ -1,0 +1,138 @@
+   /*{
+    {
+        "Latitude":51.503038,
+        "Longitude":-0.128371,
+        "Addresses":["Prime Minister & First Lord of the Treasury, 10 Downing Street, , , , London, Greater London"]
+    }
+    {
+    "Latitude": 51.507509,
+    "Longitude": -0.126747,
+    "Addresses": [
+                  "Matra Bae Dynamic, 11 Strand, , , , London, Greater London"
+                  ]
+    }
+ {
+        "Latitude": 52.249283,
+        "Longitude": -0.8806229,
+        "Addresses": [
+                      "42 East Park Parade, , , , , Northampton, Northamptonshire",
+                      "43 East Park Parade, , , , , Northampton, Northamptonshire",
+                      "44 East Park Parade, , , , , Northampton, Northamptonshire",
+                      "45 East Park Parade, , , , , Northampton, Northamptonshire",
+                      "47 East Park Parade, , , , , Northampton, Northamptonshire",
+                      "52 East Park Parade, , , , , Northampton, Northamptonshire",
+                      "54 East Park Parade, , , , , Northampton, Northamptonshire",
+                      "Basement Flat, 53 East Park Parade, , , , Northampton, Northamptonshire",
+                      "Basement Flat, 55 East Park Parade, , , , Northampton, Northamptonshire",
+                      "Flat, 50 East Park Parade, , , , Northampton, Northamptonshire",
+                      "Flat 1, 41 East Park Parade, , , , Northampton, Northamptonshire",
+                      "Flat 1, 46 East Park Parade, , , , Northampton, Northamptonshire",
+                      "Flat 1, 56-57 East Park Parade, , , , Northampton, Northamptonshire",
+                      "Flat 1, 58 East Park Parade, , , , Northampton, Northamptonshire",
+                      "Flat 1, Deepwell House, 49 East Park Parade, , , Northampton, Northamptonshire",
+                      "Flat 2, 41 East Park Parade, , , , Northampton, Northamptonshire",
+                      "Flat 2, 46 East Park Parade, , , , Northampton, Northamptonshire",
+                      "Flat 2, 48 East Park Parade, , , , Northampton, Northamptonshire",
+                      "Flat 2, 56-57 East Park Parade, , , , Northampton, Northamptonshire",
+                      "Flat 2, 58 East Park Parade, , , , Northampton, Northamptonshire",
+                      "Flat 2-6, 55 East Park Parade, , , , Northampton, Northamptonshire",
+                      "Flat 3, 41 East Park Parade, , , , Northampton, Northamptonshire",
+                      "Flat 3, 56-57 East Park Parade, , , , Northampton, Northamptonshire",
+                      "Flat 3, 58 East Park Parade, , , , Northampton, Northamptonshire",
+                      "Flat 3, Deepwell House, 49 East Park Parade, , , Northampton, Northamptonshire",
+                      "Flat 4, 41 East Park Parade, , , , Northampton, Northamptonshire",
+                      "Flat 4, 48 East Park Parade, , , , Northampton, Northamptonshire",
+                      "Flat 4, 56-57 East Park Parade, , , , Northampton, Northamptonshire",
+                      "Flat 4, 58 East Park Parade, , , , Northampton, Northamptonshire",
+                      "Flat 5, 56-57 East Park Parade, , , , Northampton, Northamptonshire",
+                      "Flat 5, 58 East Park Parade, , , , Northampton, Northamptonshire",
+                      "Flat 5, Deepwell House, 49 East Park Parade, , , Northampton, Northamptonshire",
+                      "Flat 6, 48 East Park Parade, , , , Northampton, Northamptonshire",
+                      "Flat 6, 56-57 East Park Parade, , , , Northampton, Northamptonshire",
+                      "Flat 6, 58 East Park Parade, , , , Northampton, Northamptonshire",
+                      "Northampton Stonefield Residential Home, 51 East Park Parade, , , , Northampton, Northamptonshire"
+                      ]
+    }
+    
+    {
+        "Latitude": 52.2511097,
+        "Longitude": -0.8805503,
+        "Addresses": [
+                      "10 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "12 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "18 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "20 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "22 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "24 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "26 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "28 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "34 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "36 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "38 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "4 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "46 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "48 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "48a Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "50 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "52 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "58 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "6 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "60 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "62 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "64 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "66 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "68 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "70 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "72 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "74 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "76 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "78 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "80 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "82 Kingsley Road, , , , , Northampton, Northamptonshire",
+                      "Bottom Flat, 14 Kingsley Road, , , , Northampton, Northamptonshire",
+                      "Dental Surgery, 40 Kingsley Road, , , , Northampton, Northamptonshire",
+                      "Flat 1, 42 Kingsley Road, , , , Northampton, Northamptonshire",
+                      "Flat 1, 8 Kingsley Road, , , , Northampton, Northamptonshire",
+                      "Flat 1, Bradford House, 44 Kingsley Road, , , Northampton, Northamptonshire",
+                      "Flat 1, Glenbeigh House, 16 Kingsley Road, , , Northampton, Northamptonshire",
+                      "Flat 2, 8 Kingsley Road, , , , Northampton, Northamptonshire",
+                      "Flat 2, Bradford House, 44 Kingsley Road, , , Northampton, Northamptonshire",
+                      "Flat 2, Glenbeigh House, 16 Kingsley Road, , , Northampton, Northamptonshire",
+                      "Flat 3, 8 Kingsley Road, , , , Northampton, Northamptonshire",
+                      "Flat 3, Bradford House, 44 Kingsley Road, , , Northampton, Northamptonshire",
+                      "Flat 3, Glenbeigh House, 16 Kingsley Road, , , Northampton, Northamptonshire",
+                      "Flat 4, Bradford House, 44 Kingsley Road, , , Northampton, Northamptonshire",
+                      "Flat 4, Glenbeigh House, 16 Kingsley Road, , , Northampton, Northamptonshire",
+                      "Flat 5, Bradford House, 44 Kingsley Road, , , Northampton, Northamptonshire",
+                      "Flat 6, Bradford House, 44 Kingsley Road, , , Northampton, Northamptonshire",
+                      "Flat 7, Bradford House, 44 Kingsley Road, , , Northampton, Northamptonshire",
+                      "Flat 8, Bradford House, 44 Kingsley Road, , , Northampton, Northamptonshire",
+                      "Flat 9, Bradford House, 44 Kingsley Road, , , Northampton, Northamptonshire",
+                      "Kingsley General Store, 84 Kingsley Road, , , , Northampton, Northamptonshire",
+                      "Margaret's Rest Home, 32 Kingsley Road, , , , Northampton, Northamptonshire",
+                      "Middle Flat, 14 Kingsley Road, , , , Northampton, Northamptonshire",
+                      "Shams Modpen Dental Practice, 54-56 Kingsley Road, , , , Northampton, Northamptonshire",
+                      "Tompkins Knight & Sons, 42 Kingsley Road, , , , Northampton, Northamptonshire",
+                      "Top Flat, 14 Kingsley Road, , , , Northampton, Northamptonshire"
+                      ]
+    }
+}
+*/
+{
+    "users": [
+              {
+              "name": "John",
+              "age": 25
+              },
+              {
+              "name": "Mark",
+              "age": 29
+              },
+              {
+              "name": "Sarah",
+              "age": 22
+              }
+              ],
+    "dataTitle": "JSON Tutorial!",
+    "swiftVersion": 2.1
+}
